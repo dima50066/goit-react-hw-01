@@ -1,6 +1,9 @@
-import React from 'react';
-import Profile from './components/Profile';
+import React from "react";
+import Profile from "./components/Profile/Profile";
 import userData from "./data/userData.json";
+import friends from "./data/friends.json";
+import FriendList from "./components/FriendList/FriendList";
+import "./App.css";
 
 function App() {
   return (
@@ -11,11 +14,10 @@ function App() {
         location={userData.location}
         image={userData.avatar}
         stats={userData.stats}
-
       />
+      <FriendList friends={friends} />
     </>
   );
-};
+}
 
-
-export default App
+export default App;
