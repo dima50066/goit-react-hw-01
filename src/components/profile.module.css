@@ -1,57 +1,59 @@
-.profile {
+.profileCard {
+  width: 350px;
+  border: 2px solid #000000;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 32px auto 48px auto;
+}
+
+.profileMainInfo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  width: 300px;
-  background-color: #f9f9f9;
+  background-color: #fafafa;
+  padding: 12px;
 }
 
-.description {
-  text-align: center;
-}
-
-.avatar {
+.profileAvatar {
   width: 150px;
-  height: 150px;
   border-radius: 50%;
+  background-color: #252525;
+  margin-bottom: 12px;
 }
 
-.name {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 10px 0;
+.profileNameText {
+  font-size: 28px;
+  font-weight: 600;
 }
 
-.tag,
-.location {
-  font-size: 16px;
-  color: #777;
+.profileInfoText {
+  font-size: 20px;
+  font-weight: 400;
+  color: #777777;
 }
 
-.stats {
+.profileStatsList {
   display: flex;
-  justify-content: space-around;
-  width: 100%;
-  margin-top: 20px;
-  padding: 10px;
-  border-top: 1px solid #ccc;
+  border-top: 2px solid #777777;
+  background-color: #c7c7c7;
 }
 
-.stats li {
+.profileStatsListItem {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-}
-
-.label {
-  font-size: 14px;
-  color: #777;
-}
-
-.quantity {
+  width: 100%;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 400;
+  border-right: 2px solid #777777;
+  padding: 8px;
+}
+
+.profileStatsListItem:last-child {
+  border-right: none;
+}
+
+.profileStatsText {
+  font-weight: 700;
 }
